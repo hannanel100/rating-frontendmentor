@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Overpass:wght@400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+    <title>Frontend Mentor | Interactive rating component</title>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <!-- Rating state start -->
+    <main>
+      <section class="card" id="rating__form">
+        <div class="card__header">
+          <div class="card__header__star circle">
+            <img src="./images/icon-star.svg" />
+          </div>
+          <h1 class="card__header__title">How did we do?</h1>
+        </div>
+        <div class="card__body">
+          <p class="card__body__text">
+            Please let us know how we did with your support request. All
+            feedback is appreciated to help us improve our offering!
+          </p>
+          <div class="card__body__rating flex-row">
+            <div class="card__body__rating__item circle" data-value="1">1</div>
+            <div class="card__body__rating__item circle" data-value="2">2</div>
+            <div class="card__body__rating__item circle" data-value="3">3</div>
+            <div class="card__body__rating__item circle" data-value="4">4</div>
+            <div class="card__body__rating__item circle" data-value="5">5</div>
+          </div>
+          <button class="button" id="submit" disabled="true">Submit</button>
+        </div>
+      </section>
+      <!-- Rating state end -->
+
+      <!-- Thank you state start -->
+
+      <section
+        class="not-visible card rating__submitted"
+        id="rating__submitted"
+      >
+        <div class="card__rating__submitted">
+          <img
+            src="/images//illustration-thank-you.svg"
+            <div
+            class="card__body"
+          />
+          <p class="card__body__box">
+            You selected
+            <span class="card__body__rating" id="rating"></span>
+            out of 5
+          </p>
+          <h2 class="card__body__title">Thank you!</h2>
+          <p class="card__body__text">
+            We appreciate you taking the time to give a rating. If you ever need
+            more support, don’t hesitate to get in touch!
+          </p>
+        </div>
+      </section>
+    </main>
+
+    <!-- <div class="attribution">
+      Challenge by
+      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
+        >Frontend Mentor</a
+      >. Coded by <a href="#">Your Name Here</a>.
+    </div> -->
+  </body>
+  <!-- link to main.js -->
+  <script src="./main.js"></script>
+</html>
