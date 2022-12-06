@@ -136,13 +136,28 @@ main {
   display: grid;
   gap: 1.5rem;
 }
+.card__form {
+  display: grid;
+  gap: 1.5rem;
+}
 .card__body__text {
   font-size: 0.9375rem;
 }
-.card__body__rating__item {
+.card__body__rating__items {
+  /* remove default fieldset styles */
+  border: none;
+}
+.card__body__rating__item__input {
+  /* remove default input styling of radio buttons */
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  /* custom styling of radio buttons */
+}
+.card__body__rating__item__label {
   cursor: pointer;
 }
-.card__body__rating__item:hover {
+.card__body__rating__item__label:hover {
   background-color: var(--clr-primary-500);
   color: var(--clr-neutral-100);
 }

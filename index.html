@@ -37,7 +37,11 @@
       <section class="card" id="rating__form">
         <div class="card__header">
           <div class="card__header__star circle">
-            <img src="./images/icon-star.svg" />
+            <img
+              src="./images/icon-star.svg"
+              alt="star icon"
+              aria-hidden="true"
+            />
           </div>
           <h1 class="card__header__title">How did we do?</h1>
         </div>
@@ -46,14 +50,99 @@
             Please let us know how we did with your support request. All
             feedback is appreciated to help us improve our offering!
           </p>
-          <div class="card__body__rating flex-row">
-            <div class="card__body__rating__item circle" data-value="1">1</div>
-            <div class="card__body__rating__item circle" data-value="2">2</div>
-            <div class="card__body__rating__item circle" data-value="3">3</div>
-            <div class="card__body__rating__item circle" data-value="4">4</div>
-            <div class="card__body__rating__item circle" data-value="5">5</div>
-          </div>
-          <button class="button" id="submit" disabled="true">Submit</button>
+          <form class="card__form">
+            <div class="card__body__rating">
+              <!-- <div class="card__body__rating__item circle" data-value="1">
+                1
+              </div>
+              <div class="card__body__rating__item circle" data-value="2">
+                2
+              </div>
+              <div class="card__body__rating__item circle" data-value="3">
+                3
+              </div>
+              <div class="card__body__rating__item circle" data-value="4">
+                4
+              </div>
+              <div class="card__body__rating__item circle" data-value="5">
+                5
+              </div> -->
+              <!-- fieldset with 5 input radio and labels -->
+              <fieldset class="card__body__rating__items flex-row">
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating-1"
+                  value="1"
+                  class="card__body__rating__item__input"
+                />
+                <label
+                  for="rating-1"
+                  class="card__body__rating__item__label circle"
+                  data-value="1"
+                >
+                  1
+                </label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating-2"
+                  value="2"
+                  class="card__body__rating__item__input"
+                />
+                <label
+                  for="rating-2"
+                  class="card__body__rating__item__label circle"
+                  data-value="2"
+                >
+                  2
+                </label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating-3"
+                  value="3"
+                  class="card__body__rating__item__input"
+                />
+                <label
+                  for="rating-3"
+                  class="card__body__rating__item__label circle"
+                  data-value="3"
+                >
+                  3
+                </label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating-4"
+                  value="4"
+                  class="card__body__rating__item__input"
+                />
+                <label
+                  for="rating-4"
+                  class="card__body__rating__item__label circle"
+                  data-value="4"
+                >
+                  4
+                </label>
+                <input
+                  type="radio"
+                  name="rating"
+                  id="rating-5"
+                  value="5"
+                  class="card__body__rating__item__input"
+                />
+                <label
+                  for="rating-5"
+                  class="card__body__rating__item__label circle"
+                  data-value="5"
+                >
+                  5
+                </label>
+              </fieldset>
+            </div>
+            <button class="button" id="submit" disabled="true">Submit</button>
+          </form>
         </div>
       </section>
       <!-- Rating state end -->
@@ -67,6 +156,8 @@
         <div class="card__rating__submitted">
           <img
             src="./images/illustration-thank-you.svg"
+            alt="illustration of thank you"
+            aria-hidden="true"
             <div
             class="card__body"
           />
